@@ -1,8 +1,107 @@
+var btn = $('#button');
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0
+  }, '300');
+});
+
 $('#head_slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: `
+    <button type="button" class="slick_prev"><i class="fa-solid fa-angle-left"></i></button>
+    `,
+    nextArrow: `
+    <button type="button" class="slick_next"><i class="fa-solid fa-angle-right"></i></button>
+    `,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.basket-slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: `
+    <button type="button" class="slick_prev"><i class="fa-solid fa-angle-left"></i></button>
+    `,
+    nextArrow: `
+    <button type="button" class="slick_next"><i class="fa-solid fa-angle-right"></i></button>
+    `,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.also-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: `
     <button type="button" class="slick_prev"><i class="fa-solid fa-angle-left"></i></button>
@@ -136,3 +235,107 @@ class PriceRange extends HTMLElement {
 }
 
 customElements.define('price-range', PriceRange);
+// $('.catSlider').slick({
+//   dots: true,
+//   infinite: false,
+//   speed: 300,
+//   slidesToShow: 4,
+//   slidesToScroll: 4,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 3,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
+
+$('#productsSlider').owlCarousel({
+  loop:true,
+  nav:true,
+  items: 3
+})
+
+$('.catSlider').owlCarousel({
+  loop: true,
+  nav: true,
+  items: 6,
+  dots: false,
+  margin: 10
+})
+
+
+let btns =document.querySelectorAll('#addToBasket')
+
+if(localStorage.getItem('basket') === null)
+{
+  localStorage.setItem('basket',JSON.stringify([]))
+}
+
+
+for (let btn of btns) {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    let basket = JSON.parse(localStorage.getItem('basket'))
+    let id = event.target.parentElement.parentElement.parentElement.parentElement.id
+    let img = event.target.parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.children[0].src
+    let name = event.target.parentElement.parentElement.parentElement.previousElementSibling.children[0].children[0].innerText
+    let price = event.target.parentElement.parentElement.parentElement.children[0].children[0].innerText
+    let existProduct = basket.find(x => x.id === id);
+    if (existProduct === undefined) {
+      basket.push({
+        id: id,
+        name: name,
+        img: img,
+        // price: product_price.split("US $")[1],
+        price: price.replace("US $", ""),
+        count: 1,
+    
+
+      })
+    }
+    else {
+      existProduct.count += 1
+    }
+    
+    
+
+
+
+
+    localStorage.setItem('basket', JSON.stringify(basket))
+    ShowCount()
+    
+  })
+}
+
+function ShowCount() {
+  let basket = JSON.parse(localStorage.getItem('basket'))
+  let count = basket.length
+  document.querySelector('#count').innerHTML = count
+}
+
+ShowCount()
+
+

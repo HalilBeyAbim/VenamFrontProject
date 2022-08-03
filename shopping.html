@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
       <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +18,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+ 
     <header>
         <div class="select">
             
@@ -44,7 +48,7 @@
         </div>
         <div class="center">
             <div class="left">
-              <a href="index.html"><img src="/assets/Photos/logo.png " alt=""></a>
+              <a href="index.html"> <img src="/assets/Photos/logo.png " alt=""></a> 
                 <option value="ALL CATEGORY"></option>
             </div>
             <div class="right">
@@ -68,13 +72,330 @@
                     <a href="accaount.html"><i class="fa-regular fa-user" ></i></a> 
                     <i class="fa-solid fa-arrows-rotate"></i>
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
+                    <a href="basket.html"><i class="fa-solid fa-bag-shopping"></i></a>
                     <span class="bag">0</span>
                     <span class="heart">0</span>
                     <span class="arrow">0</span>
                 </div>
             </div>
         </div>
+    
+       <div class="bottom-header">
+       <div class="container">
+        <nav class="menu-nav">
+            <div class="header-category">
+              <a href="#" class="category-toggler">
+                <i class="fas fa-bars"></i>
+                <span>All Categories</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
+    
+            <ul class="nav-links">
+              <li class="menu-item position-relative">
+                <a href="#">
+                  Home
+                  <i class="fas fa-angle-down"></i>
+                </a>
+    
+                <ul class="submenu">
+                  <li>
+                    <a href="#">Home 1 </a>
+                  </li>
+                  <li>
+                    <a href="#">Home 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Home 3</a>
+                  </li>
+                  <li>
+                    <a href="#">Home 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Categories
+                  <i class="fas fa-angle-down"></i>
+                </a>
+    
+                <div class="mega-menu">
+                  <div class="row justify-content-between">
+                    <div class="col-md-7">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                          <div class="mega-menu-item">
+                            <a href="#">Accessories & Parts</a>
+                            <ul>
+                              <li>
+                                <a href="#">Cables & Adapters</a>
+                              </li>
+                              <li>
+                                <a href="#">Batteries</a>
+                              </li>
+                              <li>
+                                <a href="#">Chargers</a>
+                              </li>
+                              <li>
+                                <a href="#">Bags & Cases</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-5">
+                      <div
+                        class="menu-banner"
+                        style="
+                          background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/banner-30.jpg);
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <li class="menu-item">
+                <a href="shopping.html">
+                  Shop
+                  <i class="fas fa-angle-down"></i>
+                </a>
+    
+                <div class="mega-menu">
+                  <div class="row justify-content-between">
+                    <div class="col-md-2">
+                      <div class="mega-menu-item">
+                        <a href="#">Accessories & Parts</a>
+                        <ul>
+                          <li>
+                            <a href="#">Cables & Adapters</a>
+                          </li>
+                          <li>
+                            <a href="#">Batteries</a>
+                          </li>
+                          <li>
+                            <a href="#">Chargers</a>
+                          </li>
+                          <li>
+                            <a href="#">Bags & Cases</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                      <div class="mega-menu-item">
+                        <a href="#">Accessories & Parts</a>
+                        <ul>
+                          <li>
+                            <a href="#">Cables & Adapters</a>
+                          </li>
+                          <li>
+                            <a href="#">Batteries</a>
+                          </li>
+                          <li>
+                            <a href="#">Chargers</a>
+                          </li>
+                          <li>
+                            <a href="#">Bags & Cases</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                      <div class="mega-menu-item">
+                        <a href="#">Accessories & Parts</a>
+                        <ul>
+                          <li>
+                            <a href="#">Cables & Adapters</a>
+                          </li>
+                          <li>
+                            <a href="#">Batteries</a>
+                          </li>
+                          <li>
+                            <a href="#">Chargers</a>
+                          </li>
+                          <li>
+                            <a href="#">Bags & Cases</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                      <div class="mega-menu-item">
+                        <a href="#">Accessories & Parts</a>
+                        <ul>
+                          <li>
+                            <a href="#">Cables & Adapters</a>
+                          </li>
+                          <li>
+                            <a href="#">Batteries</a>
+                          </li>
+                          <li>
+                            <a href="#">Chargers</a>
+                          </li>
+                          <li>
+                            <a href="#">Bags & Cases</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                      <div class="mega-menu-item">
+                        <a href="#">Accessories & Parts</a>
+                        <ul>
+                          <li>
+                            <a href="#">Cables & Adapters</a>
+                          </li>
+                          <li>
+                            <a href="#">Batteries</a>
+                          </li>
+                          <li>
+                            <a href="#">Chargers</a>
+                          </li>
+                          <li>
+                            <a href="#">Bags & Cases</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <li class="menu-item">
+                <a href="#">
+                  Pages
+                  <i class="fas fa-angle-down"></i>
+                </a>
+              </li>
+    
+              <li class="menu-item">
+                <a href="#">
+                  Special
+                  <i class="fas fa-angle-down"></i>
+                </a>
+              </li>
+    
+              <li class="menu-item">
+                <a href="#">
+                  Store list
+                  <i class="fas fa-angle-down"></i>
+                </a>
+              </li>
+    
+              <li class="menu-item">
+                <a href="contant.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+       </div>
+       </div>
     </header>
 
     <section id="contact">
@@ -188,6 +509,140 @@
                                                     </button>
                                                   </div>
                                               </div>
+                                              <div class="product-tags">
+                                                <h6>Product Tags</h6>
+                                                <div class="tagcloud">
+                                                    <a href="">Audio</a>
+                                                    <a href="">Drone</a>
+                                                    <a href="">External</a>
+                                                    <a href="">Group</a>
+                                                    <a href="">Mobile</a>
+                                                    <a href="">Nine</a>
+                                                    <a href="">Oppo</a>
+                                                    <a href="">Phone</a>
+                                                    <a href="">Product</a>
+                                                    <a href="">Simple</a>
+                                                    <a href="">Special offer</a>
+                                                    <a href="">TV</a>
+                                                    <a href="">Variable</a>
+                                                    <a href="">Video</a>
+                                                    <a href="">Watch</a>
+                                                    <a href="">Wifi</a>
+
+
+                                                </div>
+                                                <div class="on-sale">
+                                                    <h6>On Sale Product</h6>
+
+                                                   <div class="sale-widget" >
+                                                    <ul>
+                                                        <li class="apple">
+                                                            <p>
+                                                                Apple 256 GB
+                                                                
+                                                            </p>
+                                                            <del>
+                                                                <span>
+                                                                    $250
+
+                                                                </span>
+                                                            </del>  
+                                                            <ins>
+                                                                <span>
+                                                                    $240
+                                                                    <img src="/assets/Photos/Apple256GB.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                        <li class="composide">
+                                                            <p>
+                                                                Composide Product
+                                                                
+                                                            </p>
+                                                            <ins>
+                                                                <span>
+                                                                    $40
+                                                                    <img src="/assets/Photos/CompositeProduct.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                        <li class="speaker">
+                                                            <p>
+                                                                PortableWiFiSpeaker
+                                                                
+                                                            </p> 
+                                                            <ins>
+                                                                <span>
+                                                                    $32.00  -  $33.00
+                                                                    <img src="/assets/Photos/PortableWiFiSpeaker.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                   </div>
+
+
+                                                </div>
+                                                <div class="on-sale">
+                                                    <h6>Products</h6>
+
+                                                   <div class="sale-widget" >
+                                                    <ul>
+                                                        <li class="apple">
+                                                            <p>
+                                                                Apple 256 GB
+                                                                
+                                                            </p>
+                                                            <del>
+                                                                <span>
+                                                                    $250
+
+                                                                </span>
+                                                            </del>  
+                                                            <ins>
+                                                                <span>
+                                                                    $240
+                                                                    <img src="/assets/Photos/Apple256GB.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                        <li class="composide">
+                                                            <p>
+                                                                Composide Product
+                                                                
+                                                            </p>
+                                                            <ins>
+                                                                <span>
+                                                                    $40
+                                                                    <img src="/assets/Photos/CompositeProduct.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                        <li class="speaker">
+                                                            <p>
+                                                                PortableWiFiSpeaker
+                                                                
+                                                            </p> 
+                                                            <ins>
+                                                                <span>
+                                                                    $32.00  -  $33.00
+                                                                    <img src="/assets/Photos/PortableWiFiSpeaker.jpg" alt="">
+                                                                </span>
+                                                            </ins>
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                   </div>
+
+
+                                                </div>
+
+                                              </div>
                                         </div>
                                         
     
@@ -204,16 +659,1003 @@
                         <p>We’ve gathered all of the features that you might need in order to <br>  make your store online in this theme.</p>
                         <a href="">Shop now</a>
                     </div>
+                    
+                   <div class="all-cat" >
+                    <h4 class="p-3">
+                        All Categories
+                    </h4>
+                    <div class=" owl-carousel owl-theme  catSlider border">
+                        <div class="item">   
+                        <div><img src="assets/Photos/Apple256GB.jpg" alt=""></div>
+                        <p>Tablets</p>
+                        </div>
+                       <div class="item">   
+                       <div><img src="assets/Photos/dinamik.jpg" alt=""></div>
+                       <p>musical column</p>
+                       </div>
+                      <div class="item">   
+                      <div><img src="/assets/Photos/DualbandWireless.jpg" alt=""></div>
+                      <p>best seller</p>
+                      
+                      </div>
+                     <div class="item">   
+                     <div><img src="/assets/Photos/IPhone13Black.jpg" alt=""></div>
+                     <p>Iphones</p>
+                     </div>
+                        <div class="item">   
+                    <div><img src="/assets/Photos/Note9128GB.jpg" alt=""></div>
+                    <p>Android</p>
+                        </div>
+
+                        <div class="item">   
+                            <div><a href="shopcontent.html"><img src="/assets/Photos/kamera.jpg" alt=""></a></div>
+                            <p>Camera</p>
+                                </div>
+                   <div class="item">   
+                   <div><img src="/assets/Photos/oppo.jpg" alt=""></div>
+                   <p>Oppo</p>
+                   </div>
+
+                 </div> 
+                   </div>
+                   <div class="select-size">
+                    <ul class="sizes">
+                        <li><span>Home </span><span>/ </span><span> Products</span> </li>
+                        
+                    </ul>
+                    <div class="size-in-right">
+                        <pre>Show 9 / 12 / 18 / 24</pre>
+                    </div>
+                    <div class="size-icon">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-grip"></i>
+                        <i class="fa-solid fa-grip-vertical"></i>
+                        <i class="fa-solid fa-table-cells"></i>
+                    </div>
+                    <div class="size-select">
+                            <select name="cars" id="cars">
+                                <option value="Sort by latest">Sort by latest</option>
+                                <option value="Sort by popularity">Sort by popularity</option>
+                                <option value="Sort by average rating">Sort by average rating</option>
+                                <option value="Sort by price: low to high">Sort by price: low to high</option>
+                                <option value="Sort by price: high to low">Sort by price: high to low</option>
+                            </select>
+                    </div>
+                </div>
+               <div class="row">
+                <div class="col-2-5">
+                  <div class="whole-devices">
+                      <div class="device-img">
+                          <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+                          <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p class="sale">Sale!</p>
+                          <p class="apple">Aplle</p>
+                          <p class="percent">4%</p>
+                          
+                      </div>
+                      <div class="device-name text-center">
+                          <h6>
+                              <a href="">Apple 256GB</a>
+                          </h6>
+                      </div>
+                      <div class="device-price text-center">
+                          <p>
+                              <span style="color:#FF6000;">US $240.00</span>
+                           
+                          </p>
+
+                          <div class="add-to-cart-hover">
+                              <div class="top-icon d-flex justify-content-evenly align-items-center">
+                                  <a href="">
+                                      <i class="fa-solid fa-eye"></i>
+                                  </a>
+                                  <a href="">
+                                      <i class="fa-solid fa-heart"></i>
+                                  </a>
+                                  <a href="">
+                                      <i class="fa-solid fa-arrows-rotate"></i>
+                                  </a>
+                              </div>
+                              <div class="add-cart">
+                                  <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-2-5">
+                <div class="whole-devices">
+                    <div class="device-img">
+                        <img class="w-100" src="assets/Photos/IPhone13Black.jpg" alt="">
+                        <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="sale">Sale!</p>
+                        <p class="apple">Aplle</p>
+                        <p class="percent">5%</p>
+                        
+                    </div>
+                    <div class="device-name text-center">
+                        <h6>
+                            <a href="">IPhone 128GB</a>
+                        </h6>
+                    </div>
+                    <div class="device-price text-center">
+                        <p>
+                            <span style="color:#FF6000;">US $240.00</span>
+                         
+                        </p>
+
+                        <div class="add-to-cart-hover">
+                            <div class="top-icon d-flex justify-content-evenly align-items-center">
+                                <a href="">
+                                    <i class="fa-solid fa-eye"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-arrows-rotate"></i>
+                                </a>
+                            </div>
+                            <div class="add-cart">
+                                <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2-5">
+              <div class="whole-devices">
+                  <div class="device-img">
+                      <img class="w-100" src="assets/Photos/oppo.jpg" alt="">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="sale">Sale!</p>
+                      <p class="apple">Oppo</p>
+                      <p class="percent">4%</p>
+                      
+                  </div>
+                  <div class="device-name text-center">
+                      <h6>
+                          <a href="">Oppo 256GB</a>
+                      </h6>
+                  </div>
+                  <div class="device-price text-center">
+                      <p>
+                          <span style="color:#FF6000;">US $50.00</span>
+                       
+                      </p>
+
+                      <div class="add-to-cart-hover">
+                          <div class="top-icon d-flex justify-content-evenly align-items-center">
+                              <a href="">
+                                  <i class="fa-solid fa-eye"></i>
+                              </a>
+                              <a href="">
+                                  <i class="fa-solid fa-heart"></i>
+                              </a>
+                              <a href="">
+                                  <i class="fa-solid fa-arrows-rotate"></i>
+                              </a>
+                          </div>
+                          <div class="add-cart">
+                              <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2-5">
+            <div class="whole-devices">
+                <div class="device-img">
+                    <img class="w-100" src="assets/Photos/M5SmartMonitor.jpg" alt="">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="sale">Sale!</p>
+                    <p class="apple">M5</p>
+                    <p class="percent">4%</p>
+                    
+                </div>
+                <div class="device-name text-center">
+                    <h6>
+                        <a href="">Mac Monitor</a>
+                    </h6>
+                </div>
+                <div class="device-price text-center">
+                    <p>
+                        <span style="color:#FF6000;">US $240.00</span>
+                     
+                    </p>
+
+                    <div class="add-to-cart-hover">
+                        <div class="top-icon d-flex justify-content-evenly align-items-center">
+                            <a href="">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </a>
+                        </div>
+                        <div class="add-cart">
+                            <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-2-5">
+          <div class="whole-devices">
+              <div class="device-img">
+                  <img class="w-100" src="assets/Photos/kamera.jpg" alt="">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="sale">Sale!</p>
+                  <p class="apple">Camera</p>
+                  <p class="percent">4%</p>
+                  
+              </div>
+              <div class="device-name text-center">
+                  <h6>
+                      <a href="">Camera</a>
+                  </h6>
+              </div>
+              <div class="device-price text-center">
+                  <p>
+                      <span style="color:#FF6000;">US $240.00</span>
+                   
+                  </p>
+
+                  <div class="add-to-cart-hover">
+                      <div class="top-icon d-flex justify-content-evenly align-items-center">
+                          <a href="">
+                              <i class="fa-solid fa-eye"></i>
+                          </a>
+                          <a href="">
+                              <i class="fa-solid fa-heart"></i>
+                          </a>
+                          <a href="">
+                              <i class="fa-solid fa-arrows-rotate"></i>
+                          </a>
+                      </div>
+                      <div class="add-cart">
+                          <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-2-5">
+        <div class="whole-devices">
+            <div class="device-img">
+                <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="sale">Sale!</p>
+                <p class="apple">Aplle</p>
+                <p class="percent">4%</p>
+                
+            </div>
+            <div class="device-name text-center">
+                <h6>
+                    <a href="">Apple 256GB</a>
+                </h6>
+            </div>
+            <div class="device-price text-center">
+                <p>
+                    <span style="color:#FF6000;">US $240.00</span>
+                 
+                </p>
+
+                <div class="add-to-cart-hover">
+                    <div class="top-icon d-flex justify-content-evenly align-items-center">
+                        <a href="">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </a>
+                    </div>
+                    <div class="add-cart">
+                        <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2-5">
+      <div class="whole-devices">
+          <div class="device-img">
+              <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="sale">Sale!</p>
+              <p class="apple">Aplle</p>
+              <p class="percent">4%</p>
+              
+          </div>
+          <div class="device-name text-center">
+              <h6>
+                  <a href="">Apple 256GB</a>
+              </h6>
+          </div>
+          <div class="device-price text-center">
+              <p>
+                  <span style="color:#FF6000;">US $240.00</span>
+               
+              </p>
+
+              <div class="add-to-cart-hover">
+                  <div class="top-icon d-flex justify-content-evenly align-items-center">
+                      <a href="">
+                          <i class="fa-solid fa-eye"></i>
+                      </a>
+                      <a href="">
+                          <i class="fa-solid fa-heart"></i>
+                      </a>
+                      <a href="">
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                      </a>
+                  </div>
+                  <div class="add-cart">
+                      <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-2-5">
+    <div class="whole-devices">
+        <div class="device-img">
+            <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="sale">Sale!</p>
+            <p class="apple">Aplle</p>
+            <p class="percent">4%</p>
+            
+        </div>
+        <div class="device-name text-center">
+            <h6>
+                <a href="">Apple 256GB</a>
+            </h6>
+        </div>
+        <div class="device-price text-center">
+            <p>
+                <span style="color:#FF6000;">US $240.00</span>
+             
+            </p>
+
+            <div class="add-to-cart-hover">
+                <div class="top-icon d-flex justify-content-evenly align-items-center">
+                    <a href="">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </a>
+                </div>
+                <div class="add-cart">
+                    <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="col-2-5">
+  <div class="whole-devices">
+      <div class="device-img">
+          <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="sale">Sale!</p>
+          <p class="apple">Aplle</p>
+          <p class="percent">4%</p>
+          
+      </div>
+      <div class="device-name text-center">
+          <h6>
+              <a href="">Apple 256GB</a>
+          </h6>
+      </div>
+      <div class="device-price text-center">
+          <p>
+              <span style="color:#FF6000;">US $240.00</span>
+           
+          </p>
+
+          <div class="add-to-cart-hover">
+              <div class="top-icon d-flex justify-content-evenly align-items-center">
+                  <a href="">
+                      <i class="fa-solid fa-eye"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                  </a>
+              </div>
+              <div class="add-cart">
+                  <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-2-5">
+  <div class="whole-devices">
+      <div class="device-img">
+          <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="sale">Sale!</p>
+          <p class="apple">Aplle</p>
+          <p class="percent">4%</p>
+          
+      </div>
+      <div class="device-name text-center">
+          <h6>
+              <a href="">Apple 256GB</a>
+          </h6>
+      </div>
+      <div class="device-price text-center">
+          <p>
+              <span style="color:#FF6000;">US $240.00</span>
+           
+          </p>
+
+          <div class="add-to-cart-hover">
+              <div class="top-icon d-flex justify-content-evenly align-items-center">
+                  <a href="">
+                      <i class="fa-solid fa-eye"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                  </a>
+              </div>
+              <div class="add-cart">
+                  <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div>
+<div class="col-2-5">
+  <div class="whole-devices">
+      <div class="device-img">
+          <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="sale">Sale!</p>
+          <p class="apple">Aplle</p>
+          <p class="percent">4%</p>
+          
+      </div>
+      <div class="device-name text-center">
+          <h6>
+              <a href="">Apple 256GB</a>
+          </h6>
+      </div>
+      <div class="device-price text-center">
+          <p>
+              <span style="color:#FF6000;">US $240.00</span>
+           
+          </p>
+
+          <div class="add-to-cart-hover">
+              <div class="top-icon d-flex justify-content-evenly align-items-center">
+                  <a href="">
+                      <i class="fa-solid fa-eye"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-heart"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                  </a>
+              </div>
+              <div class="add-cart">
+                  <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-2-5">
+<div class="whole-devices">
+    <div class="device-img">
+        <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="sale">Sale!</p>
+        <p class="apple">Aplle</p>
+        <p class="percent">4%</p>
+        
+    </div>
+    <div class="device-name text-center">
+        <h6>
+            <a href="">Apple 256GB</a>
+        </h6>
+    </div>
+    <div class="device-price text-center">
+        <p>
+            <span style="color:#FF6000;">US $240.00</span>
+         
+        </p>
+
+        <div class="add-to-cart-hover">
+            <div class="top-icon d-flex justify-content-evenly align-items-center">
+                <a href="">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </a>
+            </div>
+            <div class="add-cart">
+                <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-2-5">
+<div class="whole-devices">
+  <div class="device-img">
+      <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="sale">Sale!</p>
+      <p class="apple">Aplle</p>
+      <p class="percent">4%</p>
+      
+  </div>
+  <div class="device-name text-center">
+      <h6>
+          <a href="">Apple 256GB</a>
+      </h6>
+  </div>
+  <div class="device-price text-center">
+      <p>
+          <span style="color:#FF6000;">US $240.00</span>
+       
+      </p>
+
+      <div class="add-to-cart-hover">
+          <div class="top-icon d-flex justify-content-evenly align-items-center">
+              <a href="">
+                  <i class="fa-solid fa-eye"></i>
+              </a>
+              <a href="">
+                  <i class="fa-solid fa-heart"></i>
+              </a>
+              <a href="">
+                  <i class="fa-solid fa-arrows-rotate"></i>
+              </a>
+          </div>
+          <div class="add-cart">
+              <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+ <div class="col-2-5">
+<div class="whole-devices">
+<div class="device-img">
+    <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <p class="sale">Sale!</p>
+    <p class="apple">Aplle</p>
+    <p class="percent">4%</p>
+    
+</div>
+<div class="device-name text-center">
+    <h6>
+        <a href="">Apple 256GB</a>
+    </h6>
+</div>
+<div class="device-price text-center">
+    <p>
+        <span style="color:#FF6000;">US $240.00</span>
+     
+    </p>
+
+    <div class="add-to-cart-hover">
+        <div class="top-icon d-flex justify-content-evenly align-items-center">
+            <a href="">
+                <i class="fa-solid fa-eye"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </a>
+        </div>
+        <div class="add-cart">
+            <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="col-2-5">
+<div class="whole-devices">
+<div class="device-img">
+    <img class="w-100" src="assets/Photos/Apple256GB.jpg" alt="">
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <p class="sale">Sale!</p>
+    <p class="apple">Aplle</p>
+    <p class="percent">4%</p>
+    
+</div>
+<div class="device-name text-center">
+    <h6>
+        <a href="">Apple 256GB</a>
+    </h6>
+</div>
+<div class="device-price text-center">
+    <p>
+        <span style="color:#FF6000;">US $240.00</span>
+     
+    </p>
+
+    <div class="add-to-cart-hover">
+        <div class="top-icon d-flex justify-content-evenly align-items-center">
+            <a href="">
+                <i class="fa-solid fa-eye"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </a>
+        </div>
+        <div class="add-cart">
+            <a style="background-color: #303030;color: #fff;" href="">ADD TO CART</a>
+        </div>
+    </div>
+    
+</div>
+
+               </div>
+               
+              
+
+</div>
+<div class="container">
+  <div class="feature-top">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="ftop-all">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="ftop-left">
+                          <h4 class="featured">Featured</h4>
+                      </div>
+                      <div class="ftop-right">
+                          <a href="">View All</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="ftop-all">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="ftop-left">
+                          <h4>Top Rated</h4>
+                      </div>
+                      <div class="ftop-right">
+                          <a href="">View All</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="ftop-all">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="ftop-left">
+                          <h4>On Sale</h4>
+                      </div>
+                      <div class="ftop-right">
+                          <a href="">View All</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="ftop-all">
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="ftop-left">
+                          
+                      </div>
+                      <div class="ftop-right">
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+        
+      </div>
+      
+
+  </div>
+  <div class="feature-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/tablet1.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Apple 256GB</a>
+                          <p style="color: #ff6000 ;">US $240.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/macmanitor1.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">M5 Smart Monitor</a>
+                          <p style="color: #ff6000 ;">US $99.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/PortableAirCooler.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Portable Wi-Fi Speaker</a>
+                          <p style="color: #ff6000 ;">US $32.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/tablet2.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Apple 256GB</a>
+                          <p style="color: #ff6000 ;">US $240.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/androidtelefon.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Composite Product</a>
+                          <p style="color: #ff6000 ;">US $64.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/proyektor.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">LED Projector</a>
+                          <p style="color: #ff6000 ;">US $85.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/IPhone13Black.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Apple Iphone 13 Black</a>
+                          <p style="color: #ff6000 ;">US $149.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                  <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                      <div class="fproducts-left text-start">
+                          <img s src="assets/Photos/androidtelefon.jpg" alt="">
+                          <span class="sale">Sale!</span>
+                      </div>
+                      <div class="fproducts-right w-50 text-center mx-4">
+                          <a style="color: #252525;" href="details.html">Composite Product</a>
+                          <p style="color: #ff6000 ;">US $64.00</p>
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                              class="fa-solid fa-star"></i>
+
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="all-fproducts d-flex justify-content-center align-items-center ">
+                    <div class="fproducts-left text-start">
+                        <img s src="assets/Photos/androidtelefon.jpg" alt="">
+                        <span class="sale">Sale!</span>
+                    </div>
+                    <div class="fproducts-right w-50 text-center mx-4">
+                        <a style="color: #252525;" href="details.html">Composite Product</a>
+                        <p style="color: #ff6000 ;">US $64.00</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+          </div>
+          <div class="banner2">
+            <span>BUILD WITH ELEMENTOR</span>
+            <h3>Modern Technology Products</h3>
+            <p>We’ve gathered all of the features that you might need in order to <br>  make your store online in this theme.</p>
+            <a href="">Shop now</a>
+      </div>
+  </div>
+</div>       
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+          </div>
 
         </div>
 
     </div>
 
+
     </section>
-  
+   <a id="button"></a>
 
     <footer>
 
@@ -430,9 +1872,7 @@
                             <p>Copyright © 2021 - Venam All Rights Reserved.</p>
                         </div>
     
-                        <div class="right-content">
-                            <img src="/asset/image/card_img.png" alt="">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -446,10 +1886,12 @@
 
 
 
-
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     
+    <script src="slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="assets/JS/main.js"></script>
 </body>
 </html>
